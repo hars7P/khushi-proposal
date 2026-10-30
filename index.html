@@ -61,8 +61,8 @@
         <section class="screen screen--active welcome-screen" id="welcome" aria-labelledby="welcome-title">
           <div class="welcome-copy">
             <p class="eyebrow"><span class="eyebrow__line"></span> just for you, Khushi</p>
-            <h1 id="welcome-title" tabindex="-1">Hey Khushi! <span class="title-heart" aria-hidden="true">♥</span><br /><em>Ek chhoti si</em><br />surprise hai tumhare liye...</h1>
-            <p class="welcome-copy__text">Kuch baatein dil mein thi. Socha, aaj tumhe thoda pyaar se bata hi doon.</p>
+            <h1 id="welcome-title" tabindex="-1">Hey, Khushi <span class="title-heart" aria-hidden="true">♥</span></h1>
+            <p class="welcome-copy__text">Aaj tumhare liye kuch special hai...</p>
             <button class="button button--primary" type="button" data-go="photo">
               <span>Open your little surprise</span>
               <span class="button__arrow" aria-hidden="true">↗</span>
@@ -70,23 +70,15 @@
             <p class="welcome-copy__aside"><span aria-hidden="true">✦</span> a tiny corner of the internet, made just for you</p>
           </div>
 
-          <div class="welcome-art" aria-hidden="true">
-            <div class="art-orbit art-orbit--outer"></div>
-            <div class="art-orbit art-orbit--inner"></div>
-            <div class="art-sun"></div>
-            <div class="art-card">
-              <span class="art-card__top">FOR MY FAVOURITE PERSON</span>
-              <span class="art-card__flower">✿</span>
-              <span class="art-card__name">Khushi</span>
-              <span class="art-card__bottom">you make ordinary days feel like poetry</span>
-              <span class="art-card__heart">♥</span>
+          <div class="welcome-art">
+            <div class="welcome-photo-card">
+              <img class="welcome-photo-card__image" src="assets/photo1.jpg" alt="Khushi in a close-up portrait" />
+              <span class="welcome-photo-card__tag">a little something, just for you ♡</span>
             </div>
-            <span class="art-spark art-spark--one">✳</span>
-            <span class="art-spark art-spark--two">✦</span>
-            <span class="art-spark art-spark--three">✧</span>
-            <span class="art-caption">a little note, from my heart to yours</span>
+            <span class="welcome-photo-spark welcome-photo-spark--one" aria-hidden="true">✦</span>
+            <span class="welcome-photo-spark welcome-photo-spark--two" aria-hidden="true">♡</span>
           </div>
-          <span class="screen-index">01 <span></span> 04</span>
+          <span class="screen-index">01 <span></span> 07</span>
         </section>
 
         <section class="screen photo-screen" id="photo" aria-labelledby="photo-title" hidden>
@@ -100,8 +92,8 @@
             <div class="photo-frame">
               <img
                 class="photo-frame__image"
-                src="assets/khushi-photo.jpg"
-                alt="Khushi in a soft pink top"
+                src="assets/photo2.jpg"
+                alt="Khushi in a soft white top"
               />
               <span class="photo-frame__heart photo-frame__heart--one" aria-hidden="true">♡</span>
               <span class="photo-frame__heart photo-frame__heart--two" aria-hidden="true">♥</span>
@@ -109,8 +101,8 @@
             </div>
             <div class="photo-note">
               <span class="photo-note__number">01 / us</span>
-              <p class="photo-note__quote">A little moment I wanted to keep close.</p>
-              <p class="photo-note__caption">A favourite photo, saved in a little frame just for you.</p>
+              <p class="photo-note__quote">Tumhari muskaan mein ek alag si sukoon hai.</p>
+              <p class="photo-note__caption">Har tasveer mein tumhari ek nayi, pyaari si baat milti hai.</p>
               <label class="button button--outline upload-button" for="photo-upload">
                 <span>Choose a photo</span>
                 <span aria-hidden="true">↗</span>
@@ -121,9 +113,61 @@
           </div>
           <div class="screen-actions">
             <button class="text-button" type="button" data-go="welcome"><span aria-hidden="true">←</span> Go back</button>
-            <button class="button button--primary" type="button" data-go="letter"><span>There’s more</span><span class="button__arrow" aria-hidden="true">↗</span></button>
+            <button class="button button--primary" type="button" data-go="photo-three"><span>There’s more</span><span class="button__arrow" aria-hidden="true">↗</span></button>
           </div>
-          <span class="screen-index">02 <span></span> 04</span>
+          <span class="screen-index">02 <span></span> 07</span>
+        </section>
+
+        <section class="screen memory-screen memory-screen--words" id="photo-three" aria-labelledby="photo-three-title" hidden>
+          <div class="memory-copy">
+            <p class="eyebrow"><span class="eyebrow__line"></span> more than words</p>
+            <h2 id="photo-three-title" tabindex="-1">Tumhari saadgi mein<br /><em>kuch toh khaas hai.</em></h2>
+            <p>Is tasveer ki tarah, tumhari chhoti-chhoti baatein bhi dil mein ek khoobsurat si jagah bana leti hain.</p>
+            <span class="memory-signoff">Bas yunhi hamesha muskurati rehna ♡</span>
+          </div>
+          <figure class="memory-photo memory-photo--portrait">
+            <img src="assets/photo3.jpg" alt="Khushi smiling softly in a pink top" />
+            <figcaption>Ek frame, dher saari pyaari feelings.</figcaption>
+          </figure>
+          <div class="screen-actions">
+            <button class="text-button" type="button" data-go="photo"><span aria-hidden="true">←</span> Go back</button>
+            <button class="button button--primary" type="button" data-go="photo-four"><span>Next memory</span><span class="button__arrow" aria-hidden="true">↗</span></button>
+          </div>
+          <span class="screen-index">03 <span></span> 07</span>
+        </section>
+
+        <section class="screen memory-screen memory-screen--cinematic" id="photo-four" aria-labelledby="photo-four-title" hidden>
+          <div class="cinematic-photo">
+            <img src="assets/photo4.jpg" alt="Khushi in a light outfit, smiling at the camera" />
+            <div class="cinematic-photo__wash" aria-hidden="true"></div>
+            <div class="cinematic-photo__caption">
+              <p class="eyebrow">a moment to keep</p>
+              <h2 id="photo-four-title" tabindex="-1">Kuch pal bas<br /><em>dil mein reh jaate hain.</em></h2>
+              <p>Tum un lamhon ko aur bhi khoobsurat bana deti ho.</p>
+            </div>
+          </div>
+          <div class="screen-actions">
+            <button class="text-button" type="button" data-go="photo-three"><span aria-hidden="true">←</span> Go back</button>
+            <button class="button button--primary" type="button" data-go="photo-five"><span>One more</span><span class="button__arrow" aria-hidden="true">↗</span></button>
+          </div>
+          <span class="screen-index">04 <span></span> 07</span>
+        </section>
+
+        <section class="screen memory-screen memory-screen--last" id="photo-five" aria-labelledby="photo-five-title" hidden>
+          <div class="last-memory-copy">
+            <p class="eyebrow"><span class="eyebrow__line"></span> one last memory</p>
+            <h2 id="photo-five-title" tabindex="-1">Aaj ki yeh shaam<br /><em>sirf tumhare naam.</em></h2>
+            <p>Yeh chhoti si yaad sambhaal ke rakhna — ab dil ki ek baat kehni hai.</p>
+          </div>
+          <figure class="memory-photo memory-photo--last">
+            <img src="assets/photo5.jpg" alt="Khushi dressed up for a special occasion" />
+            <figcaption>Khushi, tum ho toh har pal khaas hai ♡</figcaption>
+          </figure>
+          <div class="screen-actions">
+            <button class="text-button" type="button" data-go="photo-four"><span aria-hidden="true">←</span> Go back</button>
+            <button class="button button--primary" type="button" data-go="letter"><span>Read my letter</span><span class="button__arrow" aria-hidden="true">↗</span></button>
+          </div>
+          <span class="screen-index">05 <span></span> 07</span>
         </section>
 
         <section class="screen letter-screen" id="letter" aria-labelledby="letter-title" hidden>
@@ -144,10 +188,10 @@
             <span class="letter-card__stamp" aria-hidden="true">♡</span>
           </article>
           <div class="screen-actions">
-            <button class="text-button" type="button" data-go="photo"><span aria-hidden="true">←</span> Go back</button>
+            <button class="text-button" type="button" data-go="photo-five"><span aria-hidden="true">←</span> Go back</button>
             <button class="button button--primary" type="button" data-go="proposal"><span>Next</span><span class="button__arrow" aria-hidden="true">↗</span></button>
           </div>
-          <span class="screen-index">03 <span></span> 04</span>
+          <span class="screen-index">06 <span></span> 07</span>
         </section>
 
         <section class="screen proposal-screen" id="proposal" aria-labelledby="proposal-title" hidden>
@@ -165,7 +209,7 @@
             <p class="eyebrow"><span class="eyebrow__line"></span> one honest question <span class="eyebrow__line"></span></p>
             <span class="proposal-heart" aria-hidden="true">♡</span>
             <h2 id="proposal-title" tabindex="-1">Khushi, ek baat poochun?</h2>
-            <p class="proposal-question">Khushi, kya tum meri life ka hamesha wala special person banna chahogi? <span aria-hidden="true">❤️</span></p>
+            <p class="proposal-question">Kya tum meri life ka hamesha wala special person banna chahogi? <span aria-hidden="true">❤️</span></p>
             <p class="proposal-subtitle">Main nahi jaanta future mein kya likha hai, lekin agar tum chaho toh main tumhare saath khoobsurat memories banana chahta hoon. No pressure, just an honest feeling from my heart.</p>
             <div class="proposal-actions">
               <button class="button button--primary button--yes" type="button" id="yes-button">Yes, I'd love to ❤️</button>
@@ -180,7 +224,7 @@
             <p class="thought-message__copy">Bilkul Khushi, koi jaldi nahi. Tumhara answer aur comfort dono important hain. ❤️</p>
             <button class="text-button thought-message__back" id="back-to-question" type="button"><span aria-hidden="true">←</span> Back to my question</button>
           </div>
-          <span class="screen-index">04 <span></span> 04</span>
+          <span class="screen-index">07 <span></span> 07</span>
         </section>
 
         <section class="screen celebration-screen" id="celebration" aria-labelledby="celebration-title" hidden>
@@ -189,9 +233,16 @@
             <span class="celebration-sparkle" aria-hidden="true">✦</span>
             <p class="eyebrow"><span class="eyebrow__line"></span> happiest heart right now <span class="eyebrow__line"></span></p>
             <div class="celebration-icon" aria-hidden="true">♥</div>
-            <h2 id="celebration-title" tabindex="-1">Khushi!!! Tumne mera din bana diya! 🥹❤️</h2>
+            <h2 id="celebration-title" tabindex="-1">Khushi, you made this moment special! ❤️</h2>
             <p class="celebration-copy">Thank you for making this moment so beautiful.</p>
             <p class="celebration-signoff">Here’s to all the little moments waiting for us <span aria-hidden="true">♡</span></p>
+            <div class="memory-collage" aria-label="Five favorite memories of Khushi">
+              <img src="assets/photo1.jpg" alt="Khushi, memory one" />
+              <img src="assets/photo2.jpg" alt="Khushi, memory two" />
+              <img src="assets/photo3.jpg" alt="Khushi, memory three" />
+              <img src="assets/photo4.jpg" alt="Khushi, memory four" />
+              <img src="assets/photo5.jpg" alt="Khushi, memory five" />
+            </div>
             <button class="button button--outline celebration-replay" type="button" id="replay-button"><span>Read it all again</span><span aria-hidden="true">↺</span></button>
           </div>
           <span class="screen-index">♡ <span></span> ALWAYS</span>
