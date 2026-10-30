@@ -91,7 +91,7 @@ function showMusicError() {
   updateMusicState(false);
   musicToggle.disabled = true;
   musicToggle.setAttribute("aria-label", "Our song is unavailable");
-  musicStatus.textContent = "Our song couldn’t play. Check that the MP3 is available and your browser supports MP3 audio.";
+  musicStatus.textContent = "Our song couldn’t play. Check that the audio file is available and your browser supports its format.";
   musicStatus.hidden = false;
 }
 
