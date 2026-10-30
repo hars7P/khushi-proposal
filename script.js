@@ -11,6 +11,7 @@ const musicPlayer = document.querySelector("#music-player");
 const musicToggle = document.querySelector("#music-toggle");
 const musicStatus = document.querySelector("#music-status");
 const backgroundMusic = document.querySelector("#background-music");
+const musicInput = document.querySelector("#music-upload");
 
 let currentPhotoUrl = null;
 let celebrationTimers = [];
@@ -147,6 +148,45 @@ musicToggle.addEventListener("click", async () => {
     }
 
     musicStatus.textContent = "Unable to play the song. Please try again.";
+    musicStatus.hidden = false;
+  }
+});
+
+musicInput.addEventListener("change", async () => {
+  const [file] = musicInput.files;
+
+  if (!file) {
+    return;
+  }
+
+  if (!file.type.startsWith("audio/")) {
+    musicInput.value = "";
+    musicStatus.textContent = "Please choose an audio file.";
+    musicStatus.hidden = false;
+    return;
+  }
+
+  if (localAudioUrl) {
+    URL.revokeObjectURL(localAudioUrl);
+  }
+
+  localAudioUrl = URL.createObjectURL(file);
+  backgroundMusic.src = localAudioUrl;
+  musicUnavailable = false;
+  musicToggle.disabled = false;
+  musicStatus.hidden = true;
+  musicStatus.textContent = "";
+  musicInput.value = "";
+
+  try {
+    await backgroundMusic.play();
+  } catch {
+    if (backgroundMusic.error) {
+      showMusicError();
+      return;
+    }
+
+    musicStatus.textContent = "Unable to play the song. Please try another audio file.";
     musicStatus.hidden = false;
   }
 });

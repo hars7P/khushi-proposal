@@ -38,6 +38,10 @@
         </span>
         <span class="music-player__indicator" aria-hidden="true"></span>
       </button>
+      <label class="music-player__choose" for="music-upload">
+        Add your song
+        <input class="visually-hidden" id="music-upload" type="file" accept="audio/*" />
+      </label>
       <p class="music-player__status" id="music-status" role="status" aria-live="polite" hidden></p>
       <audio id="background-music" src="assets/our-song.mp3" loop preload="none" aria-hidden="true"></audio>
     </aside>

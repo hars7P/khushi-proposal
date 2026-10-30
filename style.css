@@ -50,7 +50,8 @@ button {
 
 button:focus-visible,
 a:focus-visible,
-.upload-button:focus-within {
+.upload-button:focus-within,
+.music-player__choose:focus-within {
   outline: 2px solid var(--rose);
   outline-offset: 4px;
 }
@@ -174,6 +175,18 @@ a:focus-visible,
 .music-player__button:disabled {
   cursor: not-allowed;
   opacity: 0.72;
+}
+
+.music-player__choose {
+  display: inline-flex;
+  min-height: 30px;
+  align-items: center;
+  padding: 0 5px;
+  color: var(--rose-dark);
+  cursor: pointer;
+  font-size: 10px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .music-player__disc {
